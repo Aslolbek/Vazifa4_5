@@ -1,7 +1,9 @@
 {
+
   "name": "vazifa4.5",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
+  
   "scripts": {
     "start": "node src/app",
     "dev": "nodemon src/app"

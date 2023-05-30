@@ -37,13 +37,7 @@ const addTodo= async (req, res)=>{
         res.status(201).json({message:"Siz ro'yxatdan o'tdingiz"})
     }
 
-    const id= (todos[todos.length-1]?.id || 0) +1
-    const newData = new Todo(id, name, password)
-
-    todos.push(newData)
-
-    await Todos.write(todos)
-
+   
 }
 
 const log_in= async (req, res)=>{
@@ -64,10 +58,7 @@ const log_in= async (req, res)=>{
         res.status(201).json({message:"Xatolik : Siz ro'yxatdan o'tmagansiz"})
     }
 
-    
-
 }
-
 module.exports={
     getTodo,
     addTodo,
